@@ -9,7 +9,7 @@
 </head>
 <body>
 	<?php
-		include('../controllers/dangnhap.php');  
+		include("../controllers/dangnhap_trangchu.php");  
 	?>
 	<div id="navigation">
 		<ul>
@@ -19,7 +19,7 @@
 			<li><a href="#">TUYỂN DỤNG</a></li>
 			<li><a href="#">GIỎ HÀNG</a></li>
 			<li class="sign"><input type="search" placeholder="Tìm kiếm..."></li>
-			<li class="sign"><a href="DangNhap.php">Đăng nhập</a></li>
+			<li class="sign"><a href="DangNhap_Home.php">Đăng nhập</a></li>
 		</ul>
 	</div>
 
@@ -204,14 +204,69 @@
 					<tr>
 						<td></td>
 						<td></td>
+						<td>
+							<p></p><br>
+							<label id="label">HỌ TÊN</label>
+						</td>
+					</tr>
+					<tr>
 						<td></td>
+						<td></td>
+						<td>
+							<input type="Text" name="hoten">
+						</td>
 					</tr>
 					<tr>
 						<td></td>
 						<td></td>
 						<td>
 							<p></p><br>
-							<input type="submit" name="signup" value="ĐĂNG KÝ" id="btn_dk" class="butt">
+							<label id="label">ĐỊA CHỈ</label>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>
+							<input type="Text" name="diachi">
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>
+							<p></p><br>
+							<label id="label">SỐ ĐIỆN THOẠI</label>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>
+							<input type="Text" name="sdt">
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>
+							<p></p><br>
+							<label id="label">EMAIL</label>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>
+							<input type="Text" name="email">
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>
+							<p></p><br>
+							<input type="submit" name="dangky" value="ĐĂNG KÝ" id="btn_dk" class="butt">
 						</td>
 					</tr>
 				</table>
