@@ -1,0 +1,19 @@
+<?php
+	if(isset($_POST['dangky'])){
+		$username=$_POST['username2'];
+		$password=$_POST['password2'];
+		$xacnhanmk=$_POST['xnmatkhau'];
+		$hoten=$_POST['hoten'];
+		$diachi=$_POST['diachi'];
+		$sdt=$_POST['sdt'];
+		$email=$_POST['email'];
+		$sql="insert into khachhang(tentk, matkhau, hoten, diachi, sodienthoai, email) values('$username', '$password', '$hoten', '$diachi', '$sdt', '$email')";
+		$rs=mysql_query($sql);
+		if($rs){
+			header('location:../index.php');
+		} 
+		else{
+			header('location:DangNhap_Home.php');
+		}
+	}  
+?>

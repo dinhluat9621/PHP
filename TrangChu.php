@@ -9,13 +9,13 @@
   <script type="js/jquery-3.2.0.min.js"></script>
 </head>
 <body>
-  <?php
+  <!--<?php
     session_start();  
-    if (!isset($_SESSION['danhnhap'])) {
+    if (!isset($_SESSION['dangnhap'])) {
        # code...
-        header('location:DangNhap.php');
+        header('location:views/DangNhap.php');
     } 
-   ?>
+   ?>-->
 	<div id="navigation">
 		<ul>
 			<li><a href="#">BLOG LÀM ĐẸP</a></li>
@@ -28,7 +28,7 @@
           <input type="search" placeholder="Tìm kiếm...">
         <form action="" method="get">
       </li>
-			<li class="sign"><a href="DangNhap.php">Đăng nhập</a></li>
+			<li class="sign"><a href="views/DangNhapHome.php">Đăng nhập</a></li>
 		</ul>
 	</div>
 
@@ -39,7 +39,7 @@
 		<div class="col-md-8" id="content">
       <!-- Logo content -->
         <div class="logo_content">
-          <a href="TrangChu.php"><img src="image/gumiho.png" id="logo"></a>
+          <a href="index.php"><img src="views/image/gumiho.png" id="logo"></a>
           <div class="right_logo">
             <div>
               <p>
@@ -64,18 +64,17 @@
 			<div id="menu">
         <br>
 			  	<ul>
-			  		<li><a href="#">MỚI</a></li>
-			  		<li><a href="BanChay.php">BÁN CHẠY</a></li>
+            <li><a href="views/BanChay.php">BÁN CHẠY</a></li>
 				    <li><a href="#">MẮT</a>
 				      <ul class="submenu">
-				        <li><a href="PhanMat.php">Phấn mắt</a></li>
-				        <li><a href="KeMat.php">Kẻ mắt</a></li>
-				        <li><a href="Mascara.php">Mascara</a></li>
-				        <li><a href="ChanMay.php">Chân mày</a></li>
-				        <li><a href="LongMiGia.php">Lông mi giả</a></li>
-                <li><a href="PaletteChoMat.php">Pallette cho mắt</a></li>
-                <li><a href="CoMat.php">Cọ mắt</a></li>
-                <li><a href="DuongDaMat.php">Dưỡng da mắt</a></li>
+				        <li><a href="views/PhanMat.php">Phấn mắt</a></li>
+				        <li><a href="views/KeMat.php">Kẻ mắt</a></li>
+				        <li><a href="views/Mascara.php">Mascara</a></li>
+				        <li><a href="views/ChanMay.php">Chân mày</a></li>
+				        <li><a href="views/LongMiGia.php">Lông mi giả</a></li>
+                <li><a href="views/PaletteChoMat.php">Pallette cho mắt</a></li>
+                <li><a href="views/CoMat.php">Cọ mắt</a></li>
+                <li><a href="views/DuongDaMat.php">Dưỡng da mắt</a></li>
 				      </ul>
 				    </li>
 					<li><a href="#">MÔI</a>
@@ -126,7 +125,7 @@
 			  	</ul>
 			</div>
 			<div>
-				<img src="image/blog.png" alt="">
+				<img src="views/image/blog.png" alt="">
 			</div>
 
 			<div>
@@ -137,9 +136,9 @@
 							<th ></th>
 						</tr>
 						<tr >
-							<td id="table_1"><a href="#" target="_blank"><img src="image/banner-1.png"></a></td>
-							<td id="table_1"><a href="#" target="_blank"><img src="image/banner-2.png"></a></td>
-							<td id="table_1"><a href="#" target="_blank"><img src="image/banner-3.jpg"></a></td>
+							<td id="table_1"><a href="#" target="_blank"><img src="views/image/banner-1.png"></a></td>
+							<td id="table_1"><a href="#" target="_blank"><img src="views/image/banner-2.png"></a></td>
+							<td id="table_1"><a href="#" target="_blank"><img src="views/image/banner-3.jpg"></a></td>
 						</tr>
 				</table>
 			</div>
@@ -184,9 +183,9 @@
 			</div>
 			<div>
         <table id="table_5">
-          <th><img src="image/peta.png" id="image"></th>
-          <th><img src="image/logo_client.png" id="image"></th>
-          <th><img src="image/paypal.png" id="image"></th>
+          <th><img src="views/image/peta.png" id="image"></th>
+          <th><img src="views/image/logo_client.png" id="image"></th>
+          <th><img src="views/image/paypal.png" id="image"></th>
         </table>
 			</div>
 		</div>
@@ -315,6 +314,6 @@
   			</table>
   		</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
-<script src="js/bootstrap.min.js"></script>
+<script src="views/js/bootstrap.min.js"></script>
 </body>
 </html>
